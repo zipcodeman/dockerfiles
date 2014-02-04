@@ -20,3 +20,4 @@ RUN apt-get install -y tmux
 RUN apt-get install -y vim
 
 RUN adduser user --gecos "M.T. Seat,42,," --disabled-login
+RUN adduser user sudo
