@@ -1,4 +1,4 @@
-FROM zipcodeman/linode
+FROM zipcodeman/base
 
 MAINTAINER Zachary Bush <zabu.other@gmail.com>
 
