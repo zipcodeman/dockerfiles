@@ -9,3 +9,6 @@ RUN gem install jekyll
 
 RUN sudo -u user mkdir -p ~user/zmbush.com
 RUN sudo -u user git clone https://github.com/zipcodeman/zmbush.com ~user/zmbush.com/www
+
+ADD zmbush.com.nginx /etc/nginx/sites-available/zmbush.com
+RUN ln -s /etc/nginx/sites-available/zmbush.com /etc/nginx/sites-enabled/zmbush.com
