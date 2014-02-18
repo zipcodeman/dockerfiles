@@ -1,7 +1,7 @@
 server {
-  if ($host !~* ^www\.) {
-    rewrite ^(.*)$ http://www.zmbush.com$1 permanent;
-  }
+  # if ($host !~* ^www\.) {
+  #   rewrite ^(.*)$ http://www.zmbush.com$1 permanent;
+  # }
   listen 80;
 
   server_name zmbush.com www.zmbush.com;
@@ -12,7 +12,7 @@ server {
   error_page 500 502 503 504 = /server_error/;
 
   location / {
-    root /home/zmbush/zmbush.com/www/_site;
+    root /home/user/zmbush.com/www/_site;
     index index.html;
   }
 
