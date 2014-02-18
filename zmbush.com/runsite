@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~user/zmbush.com/www; git pull
+sudo -u user jekyll build --source ~user/zmbush.com/www --destination ~user/zmbush.com/www/_site
+/usr/sbin/nginx -c /etc/nginx/nginx.conf
